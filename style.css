@@ -1,0 +1,807 @@
+/*
+black: #101010
+red: #df0613 
+*/
+
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+    --custom-gradient: linear-gradient(to right, #007ee2, #009dd4, #00bcc7);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(pics/BACKground.png);
+    max-width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}   
+.descreption{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+nav .hode{
+    display: none;
+}
+
+/* ******************** Header ******************** */
+
+header {
+    padding: 1rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: white solid 2px;
+}
+header .logo img{
+    width: 10rem;
+}
+header nav a{
+    font-weight: 500;
+    padding-left: 1rem;
+}
+header nav a:hover{
+    color:#4387f6;
+}
+header .raid .abtn{
+    margin-left: .5rem;
+    background-color: #4387f6;
+    padding: .8rem 1.2rem;
+    border-radius: 9999px;
+}
+header .raid .hacknavbtn{
+    background-color: #df0613 ;
+}
+header .raid .abtn:hover{
+    color:#fff;
+} 
+header .burgermenu{
+    display: none;
+}
+
+
+/* ******************** Home ******************** */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 8rem;
+}
+.home img {
+    width: 30%;
+}
+.home h1{
+    font-size: 4.2rem;
+    color: #f4f4f5;
+    text-align: center;
+    text-transform: uppercase;
+}
+.home h1 span{
+    color:#007ee2    ;
+}
+.home h1 img{
+    width: 60%;
+}
+.home .dnl{
+    display: flex;
+}
+.home .dnl>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+.home .dnl i{
+    padding: 0 1rem;
+    font-size:1.5rem ;
+}
+.home .counter{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+.home .counter .hide{
+    display: none;
+}
+.home .counter>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    font-weight: 600;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    margin: 0 .8rem;
+}
+.home .counter>div span{
+    width: 4rem;
+    text-align: center;
+}
+.home .btn{
+    margin-top: 2rem;
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+}
+.home .btn .registrationbtn{
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color:#4387f6     ;
+    padding: 1rem 2.2rem;
+    border-radius: 9999px;
+}
+.home .btn .hackbtn{
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color:#4387f6     ;
+    padding: 1rem 2.2rem;
+    border-radius: 9999px;
+    background-color: #df0613 ;
+}
+/* ******************** About ******************** */
+
+.about, .hackathon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 8rem;
+}
+.about .left, .hackathon .right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.about .left h1 , .hackathon .right h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about .left img{
+    width: 80%;
+    margin: 10rem 0;
+}
+.about .right, .hackathon .left{
+    width: 50%;
+}
+.about .right p, .hackathon .left p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
+
+/* ******************** Themes ******************** */
+
+.themes{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 8rem;
+}
+.themes .themescards, .why .whycards, .speakers .speakerslist{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.themes .themescards .theme{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background: linear-gradient(to right,#007ee2 ,#009dd4, #00bcc7);
+    padding: 2rem 3rem;
+    margin: 1rem;
+}
+.themes .themescards .theme i{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.themes .themescards .theme h4{
+    color: white;
+    text-transform: uppercase;
+}
+
+/* ******************** Why ******************** */
+
+.why{
+    padding: 10rem 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.why .whycards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.why .whycards .whycard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur (10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+    max-width: 30%;
+}
+.why .whycards .whycard h3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.why .whycards .whycard p{
+    color: white;
+    width: 60%;
+    text-align: center;
+}
+
+/* ******************** Hackathon ******************** */
+
+/* same code as about section */
+.hackathon .right img{
+    width: 80%;
+    margin: 8rem 0;
+}
+/* ******************** Organizers ******************** */
+
+.organizers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem 8rem;
+}
+.organizers .orgcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    width: 100%;
+}
+.organizers .orgcontainer > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 45%;
+}
+.organizers .orgcontainer > div img{
+    width: 50%;
+    margin-bottom: 2rem;    
+    margin-top: 1rem;
+}
+.organizers .orgcontainer .right img{
+    width: 38%;
+}
+.organizers .orgcontainer > div h4{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+.organizers .orgcontainer > div p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+/* ******************** partners ******************** */
+
+.partners{
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem 8rem;
+}
+.partners .partnerslist{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+.partners .partnerslist .partner{
+    width: 30%;
+}
+.partners .partnerslist .partner img{
+    width: 50%;
+}
+
+/* ******************** Footer ******************** */
+
+body>.line{
+    max-width: 100%;
+    border: 1px solid white;
+    margin-bottom: 3rem;
+}
+footer{
+    padding: 2rem 12rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* ******************** left side */
+footer .left{
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer .left img{
+    width: 70%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: white solid 2px;
+}
+footer .left h2{
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+footer .left >div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .left >div>div{
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+footer .left >div>div i{
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+/* ******************** mid side */
+footer .mid{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+    padding-right: 5rem;
+}
+footer h5{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+}
+footer .mid >h5{
+    text-align: center;
+    margin-bottom: 1%;  
+}
+footer .mid>.line{
+    width: 30%;
+    margin-bottom: 3rem;
+    border: 1px solid white;
+}
+footer .mid nav{
+    display: flex;
+    flex-direction: column;
+}
+footer .mid nav a{
+    font-weight: 400;
+    margin-bottom: .5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1rem;
+}
+/* ******************** left right */
+footer .right{
+    max-width: 35%;
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+}
+footer .right h5{
+    margin-bottom: .5rem;
+}
+footer .right .sm{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .right .sm .hide{
+    display: none;
+}
+footer .right .sm i{
+    color: white;
+    font-size: 1.5rem;
+    transition: ease-in-out .3s;
+}
+footer .right .sm i:hover{
+    color: #4387f6;
+}
+footer .right p{
+    color: white;
+}
+footer .right>div{
+    display: flex;
+    border-top: 2px solid white;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+}
+footer .right img{
+    margin-top: 1rem;
+    width: 70%;
+}
+body>p{
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+body>p a{
+    text-decoration: underline; 
+    color: #4387f6;
+}
+body>p br{
+    display: none;
+}
+
+/* ************************************** responsivity ******************************************** */
+
+/* ******************** 1500px */
+
+@media (max-width: 1500px)  {
+    header,footer,.home, .about,.themes,.why,.hackathon,.organizers,.speakers,.sponsors,.partners{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .home >img {
+        width: 40%;
+    }
+    .home h1{
+        font-size: 4rem;
+    }
+    .about .right p, .hackathon .left p,.organizers .orgcontainer > div p{
+        font-size: 1.2rem;
+    }
+    .about .left img{
+        margin: 7rem 0;
+    }
+    .hackathon .right img{
+        margin: 5rem 0;
+    }
+}
+
+/* ******************** 1350px */
+
+@media (max-width: 1350px){
+    .title{
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+    header .logo img{
+        width: 6rem;
+    }
+    header nav a{
+        padding-left: 0.3rem;
+        font-size: .9rem;
+    }
+    .home> img {
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+    .home h1{
+        font-size: 3rem;
+    }
+    .home h1 img{
+        margin-bottom: 2rem;
+    }
+    .home .dnl{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .home .counter>div{
+        font-weight: 600;
+        padding: 1.2rem .7rem;
+        border-radius: 10px;
+        margin: 0 .8rem;
+    }
+    .home .counter>div span{
+        width: 3rem;
+        font-size: .7rem;
+    }
+    .home .btn{
+        width: 30%;
+    }
+    .home .btn .registrationbtn{
+        padding: .8rem 1.1rem;
+    }
+    .home .btn .hackbtn{
+        padding: .7rem 1.2rem;
+    }
+    .about .right p, .hackathon .left p,.organizers .orgcontainer > div p{
+        font-size: 1rem;
+    }
+    .about .left h1, .hackathon .right h1{
+        font-size: 2.3rem;
+    }
+    .why .whycards .whycard{
+        max-width: 45%;
+    }
+    footer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    footer .left >div>div p{
+        text-align: center;
+    }
+    footer .mid>.line{
+        width: 45%;
+    }
+    footer .right .sm{
+        width: 40%;
+    }
+}
+
+/* ******************** 1000px */
+
+@media (max-width: 1000px){
+    header,footer,.home, .about,.themes,.why,.hackathon,.organizers,.speakers,.sponsors,.partners{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .title{
+        font-size: 2.3rem;
+    }
+    .why .whycards .whycard h3{
+        font-size: 1.7rem;
+    }
+}
+
+/* ******************** 900px */
+
+@media (max-width: 900px){
+    footer,.home, .about,.themes,.why,.hackathon,.organizers,.speakers,.sponsors,.partners{
+        padding: 5rem 1rem;
+        max-width: 100%;
+    }
+    .home, .about,.themes,.why,.hackathon,.organizers,.speakers,.partners{
+        min-height: 100vh;
+    }
+    .title{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    .descreption{
+        font-size: 1rem;
+    }
+    header{
+        display: none;
+    }
+    .home{
+        padding: 8rem 1rem;
+    }
+    .home> img {
+        width: 40%;
+    }
+    .home h1{
+        font-size: 2rem;
+        color: white;
+        text-transform: uppercase;
+    }
+    .home h1 span{
+        color:#007ee2    ;
+    }
+    .home h1 img{
+        width: 40%;
+    }
+    .home .dnl{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .home .dnl>div {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .home .dnl i{
+        padding: 0 .2rem;
+        font-size:1.2rem ;
+    }
+    .home .counter .hide{
+        display: block;
+        padding-left: 2px;
+    }
+    .home .counter .nothide{
+        display: none;
+    }
+    .home .counter>div{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        font-weight: 500;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        margin: 0 .5rem;
+    }
+    .home .counter>div span{
+        font-size: .8rem;
+        width: auto;
+    }
+    .home .btn{
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .home .btn .registrationbtn{
+        font-size: 1rem;
+        padding: .7rem 1.3rem;
+    }
+    .home .btn .hackbtn{
+        font-size: 1rem;
+        padding: .7rem 1.3rem;
+    }
+    .about .left h1 , .hackathon .right h1{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .about .left img, .hackathon .right img{
+        display: none;
+    }
+    .about,.hackathon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hackathon{
+        flex-direction: column-reverse;
+    }
+    .about .right, .hackathon .left{
+        width: 85%;
+    }
+    .about .right p, .hackathon .left p{
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0rem;
+    }
+    .why .whycards{
+        justify-content: center;
+    }
+    .why .whycards .whycard{
+        max-width: 85%;
+    }
+    .why .whycards .whycard p{
+        width: 90%;
+    }
+    .organizers .orgcontainer{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .organizers .orgcontainer .left{
+        margin-bottom: 3rem;
+    }
+    .organizers .orgcontainer .left,.organizers .orgcontainer .right{
+        max-width: 85%;
+    }
+    .organizers .orgcontainer .left,.organizers .orgcontainer .right h4{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .organizers .orgcontainer .left p,.organizers .orgcontainer .right p{
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .sponsors .sponsorslist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors .sponsorslist .sponsor{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    .partners .partnerslist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    .partners .partnerslist .partner{
+        width: 90%;
+    }
+    .partners .partnerslist .partner img{
+        width: 50%;
+    }
+    body>.line{
+        max-width: 100%;
+        border: 01px solid white;
+        margin-bottom: 1.5rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    footer .right,footer .left{
+        align-items: center;
+        max-width: 90%;
+    }
+    footer .left h2{
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    footer .left >div>div{
+        font-size: .8rem;
+    }
+    footer .left >div>div i{
+        font-size: 1rem;
+    }
+    footer .mid{
+        display: none;
+    }
+    footer .right{
+        margin: 0;
+    }
+    footer .right .sm{
+        width: 70%;
+    }
+    footer .right .sm .hide{
+        display: block;
+    }
+    footer .right>p,footer .right >h5{
+        display: none;
+    }
+    body>p{
+        margin-top: 2rem;
+        font-size: .8rem;
+    }
+    body>p br{
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

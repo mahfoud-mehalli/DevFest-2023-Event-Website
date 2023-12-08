@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hackathon, technology, coding, innovation, GDG Constantine, GDG Devfest, GDG Hackathon, Devfest Hackathon, GDG Constantine Devfest, GDG Constantine Hackathon, Devfest Constantine Hackathon">
+    <meta name="description" content="Unlock innovation and showcase your coding prowess at GDG Constantine's exciting hackathon! Dive into the latest technology trends, solve real-world challenges, and join a community of like-minded enthusiasts. Stay tuned for the theme reveal and gear up for a thrilling coding experience. Get ready to code, collaborate, and create at our cutting-edge hackathon event.">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/GDG-Logoa.png">
+    <title>DevFest Constantine</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="pics/LOGO-WHITE.png" alt=""></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#hackathon">Hackathon</a>
+            <a href="#organizers">Organizers</a>
+            <a href="#speakers" class="hode">Speakers</a>
+            <a href="#sponsors" class="hode">Sponsors</a>
+            <a href="#partners">Partners</a>
+            <a href="/otherlinks/contact.html">Contact Us</a>
+        </nav>
+        <div class="raid">
+            <a href="https://gdg.community.dev/events/details/google-gdg-constantine-presents-devfest-constantine-2023/" class="abtn">Register</a>
+            <a href="otherlinks/hpage.html" class="hacknavbtn abtn">Hackathon</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <img src="pics/GDG CONSTATINE copie.png" alt="">
+        <h1>Constantine most <span>awaited</span><br><img src="pics/TO_MAHFPUD.png" alt=""></h1>
+        <div class="dnl">
+            <div class="date"> 
+                <p><i class="fa-solid fa-calendar-days"></i>December 11th, 12th and 13th 2023</p>
+            </div>
+            <div class="location">
+                <p><i class="fa-solid fa-location-dot"></i>NTIC Departement University Of Constantine 2</p>
+            </div>
+        </div>
+        <div class="counter">
+            <div class="">
+                <span class="days"></span>
+                <span class="nothide">Days</span>
+                <span class="hide">D</span>
+            </div>
+            <div class="">
+                <span class="hours"></span>
+                <span class="nothide">Hours</span>
+                <span class="hide">H</span>
+            </div>
+            <div class="">
+                <span class="minutes"></span>
+                <span class="nothide">Minutes</span>
+                <span class="hide">M</span>
+            </div>
+            <div class="">
+                <span class="seconds"></span>
+                <span class="nothide">Seconds</span>
+                <span class="hide">S</span>
+            </div>
+            <script>
+                // Date Of The Event Date To Countdown To
+                            
+                let countDownDate = new Date("Dec 11, 2024 08:59:59").getTime();
+                // console.log(countDownDate);
+
+                let counter = setInterval(() => {
+                  // Get Date Now
+                  let dateNow = new Date().getTime();
+                
+                  // Find The Date Difference Between Now And Countdown Date
+                  let dateDiff = countDownDate - dateNow;
+                
+                  // Get Time Units
+                  // let days = Math.floor(dateDiff / 1000 / 60 / 60 / 24);
+                  let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+                  let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+                  let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
+                
+                  document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
+                  document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
+                  document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+                  document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+                
+                  if (dateDiff < 0) {
+                    clearInterval(counter);
+                  }
+                }, 1000);
+            </script>
+        </div>
+        <div class="btn">
+            <a class="registrationbtn" href="https://gdg.community.dev/events/details/google-gdg-constantine-presents-devfest-constantine-2023/">Register</a>
+            <a class="hackbtn" href="otherlinks/hpage.html">Hackathon</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="left">
+            <h1>What Is Devfest !!!</h1>
+            <img src="pics/LOGO-WHITE.png" alt="">
+        </div>
+        <div class="right">
+            <p>DevFest, short for "Developer Festival," is an annual community-led developer conference
+                that focuses on various topics related to technology, software development, and Google
+                technologies.</p>
+            <p>These events are typically organized by local Google Developer Groups (GDGs) or other
+                tech communities, and they are designed to bring together developers, designers,
+                entrepreneurs, and tech enthusiasts for a day or more of workshops, sessions, and networking
+                opportunities.</p>
+        </div>
+    </section>
+
+    <section class="themes" id="themes">
+        <h1 class="title">Themes</h1>
+        <p class="descreption">In our event we are going are the following themes and more.</p>
+        <div class="themescards cards">
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+            <div class="theme card">
+                <i class="fa-solid fa-computer"></i>
+                <h4>Computer Science</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why" id="why">
+        <h1 class="title">Why Should I Participate in Devfest ?</h1>
+        <div class="whycards cards">
+            <div class="whycard card">
+                <h3>Community Building</h3>
+                <p>DevFest events help strengthen local developer communities
+                    and encourage knowledge sharing. These events often foster a sense of belonging
+                    and collaboration among participants.</p>
+            </div>
+            <div class="whycard card">
+                <h3>Networking</h3>
+                <p>DevFest provides an excellent opportunity for attendees to network
+                    with fellow developers, share ideas, and connect with potential mentors or
+                    collaborators.</p>
+            </div>
+            <div class="whycard card">
+                <h3>Sessions and Workshops</h3>
+                <p>DevFest typically features a series of technical sessions,
+                    workshops, and talks delivered by industry experts and community leaders. Attendees
+                    can learn about the latest technologies, tools, and best practices.</p>
+            </div>
+            <div class="whycard card">
+                <h3>Content Variety</h3>
+                <p>DevFest events cover a wide range of technology topics, including
+                    web and mobile development, cloud computing, machine learning, artificial
+                    intelligence, open-source technologies, and more. The specific topics can vary from
+                    one DevFest to another, based on the interests and expertise of the organizing
+                    community.</p>
+            </div>
+            <div class="whycard card">
+                <h3>Google Technologies</h3>
+                <p>DevFest events often have a focus on Google technologies
+                    and products, such as Android, Google Cloud, TensorFlow, and more. Google
+                    frequently supports these events by providing speakers, resources, and sometimes
+                    swag.</p>
+            </div>
+            <div class="whycard card">
+                <h3>Open to All</h3>
+                <p>DevFest events are typically open to developers of all levels, from
+                    beginners to experts. They aim to be inclusive and provide something of value for
+                    everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hackathon" id="hackathon">
+        <div class="left">
+            <p>The primary goal of the DevFest Constantine 2023 Hackathon is to encourage participants
+                to tackle real-world challenges, ideate innovative solutions, and transform their ideas into
+                tangible outputs. With the guidance and support of mentors, as well as access to
+                cutting-edge resources, teams will have the chance to compete, collaborate, and unleash
+                their full potential.</p>
+            <p>Our objective is to witness groundbreaking solutions that can reshape industries and
+                improve lives. By combining talent, expertise, and determination,
+                we aim to foster an environment whereparticipants can collaborate,
+                tap into their creative minds, and showcase their problem-solving
+                abilities while addressing the emerging and critical issues
+                faced in Algeria.</p>
+        </div>
+        <div class="right">
+            <h1>The Devfest Hackathon</h1>
+            <img src="pics/Groupe 1-1.png" alt="">
+        </div>
+    </section>
+
+    <section class="organizers" id="organizers">
+        <h1 class="title">Organizers</h1>
+        <div class="orgcontainer">
+            <div class="left">
+                <img src="pics/GDG-LogoHACKATHON.png" alt="">
+                <h4>GDG Constantine<br><span>NTIC UC2</span></h4>
+                <p>GDG Constantine is a local community situated at the Faculty of NTIC of Université
+                    Abdelhamid Mehri-Constantine 2. It is made up of passionate, ambitious, and dedicated developers as
+                    well as motivated young students. It was created in the last quarter of 2012, and it aims
+                    to improve the student developer environment and community in Constantine.</p>
+            </div>
+            <div class="right">
+                <img src="pics/WTM ConstantineSVG.svg" alt="">
+                <h4>Women TechMakers<br><span>NTIC UC2</span></h4>
+                <p>Google's Women Techmakers program provides visibility, community, and resources for women in technology.
+                    Women Techmakers Ambassadors are leaders around the world who are passionate about empowering their communities through organizing events, public speaking, creating content, and mentoring.                   
+                    In Constantine, alongside the GDG Constantine community, Women TechMakers Constantine strives to build a strong ecosystem for women in tech.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners" id="partners">
+        <h1 class="title">Our Partner</h1>
+        <!-- <p class="descreption">These wonderful organizationgs donated above and beyond to help us reach our goals.</p> -->
+        <div class="partnerslist">
+            <div class="partner card">
+                <img src="pics/partners/Asset 1PNG.png" alt="" class="logo">
+                <!-- <h6>Charika Gadra</h6> -->
+            </div>
+            <div class="partner card">
+                <img src="pics/partners/google-ar21.svg" alt="" class="logo">
+                <!-- <h6>Charika Gadra</h6> -->
+            </div>
+            <div class="partner card">
+                <img src="pics/partners/Asset 3PNG.png" alt="" class="logo">
+                <!-- <h6>Charika Gadra</h6> -->
+            </div>
+            <div class="partner card">
+                <img src="pics/partners/Asset 4PNG.png" alt="" class="logo">
+                <!-- <h6>Charika Gadra</h6> -->
+            </div>
+        </div>
+    </section>
+    
+    <div class="line"></div>
+
+    <footer>
+        <div class="left">
+            <img src="pics/LOGO-WHITE.png" alt="">
+            <h2>Devfest Event 2023<br>Google Developer Group Constantone</h2>
+            <div class="dnl">
+                <div>                    
+                    <p><i class="fa-solid fa-calendar-days"></i>December 11th, 12th and 13th 2023</p><br>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-location-dot"></i>NTIC Departement University Of Constantine 2</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid">
+            <h5 class="nmiii">MENU</h5>
+            <div class="line"></div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#hackathon">Hackathon</a>
+                <a href="#organizers">Organizers</a>
+                <a href="#speakers" class="hode">Speakers</a>
+                <a href="#sponsors" class="hode">Sponsors</a>
+                <a href="#partners">Partners</a>
+                <a href="otherlinks/contact.html">Contact Us</a>
+                <a href="https://gdg.community.dev/events/details/google-gdg-constantine-presents-devfest-constantine-2023/">Register</a>
+                <a href="otherlinks/hpage.html">Hackathon</a>
+            </nav>
+        </div>
+
+        <div class="right">
+            <h5>You can find us on</h5>
+            <nav class="sm">
+                <a href="https://www.instagram.com/gdg_constantine/?utm_source=ig_web_button_share_sheet"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/GDGConstantine"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/gdg-constantine/mycompany/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/GDG_Constantine?s=20"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="hide" href="otherlinks/contact.html"><i class="fa-solid fa-envelope"></i></a>
+            </nav>
+            <h5 class="mmm">Contact us via Email</h5>
+            <p>contact@gdg-constantine.com</p>
+            <div>
+                <h5>Organized by:</h5>
+                <img src="pics/GDG-LogoWHITE.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <p>&copy; <span id="currentYear"></span>All Rights Reserved For GDG Constantine 2023.<br>Fully Coded By <a href="https://www.linkedin.com/in/mahfoud-bahaeddine-mehalli-955218267/">mahfoud</a></p>
+</body>
+</html>

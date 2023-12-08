@@ -1,0 +1,85 @@
+@import url('https://fonts.cdnfonts.com/css/aquire');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../pics/BACKground.png);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 40%;
+    margin: 2rem auto;
+    background-color: transparent;
+    padding: 2.5rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #bd0e18;
+}
+body>h1{
+    font-family: 'Aquire', sans-serif;
+    color: #bd0e18;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+form {
+    display: grid;
+    gap: .9rem;
+}
+
+label {
+    font-weight: 600;
+    padding-left: .3rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+textarea,input,select{
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 15px;
+    min-height: 1rem;   
+    outline: none;
+    border: none;
+    resize: none;
+    min-height: 2rem;
+    box-shadow: 1px 1px 10px #bd0e18;
+    color: #bd0e18;
+}
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: #bd0e18;
+    text-align: c;
+} 
+button {
+    background-color: #bd0e18;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bd0e18;
+}
+
+
+/* ******************** 900px */
+
+@media (max-width: 900px){
+    body>h1{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    .container{
+        min-width: 80%;
+        padding: 2rem 1.5rem;
+        margin-top: 1rem;
+    }
+}
